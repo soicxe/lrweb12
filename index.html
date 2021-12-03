@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+	<title>Lab 12</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script async defer src="script.js"></script>
+</head>
+<body>
+	<div id="backImage">
+		<div id="text">
+			<p>Difficulty level</p>
+			<div>
+				<input type="radio" id="level1"
+					   name="level" value="easy" checked>
+				<label for="level1">Easy</label>
+
+				<input type="radio" id="level2"
+					   name="level" value="medium">
+				<label for="level2">Medium</label>
+
+				<input type="radio" id="level3"
+					   name="level" value="hard">
+				<label for="level3">Hard</label>
+			</div>
+			<div>
+				<button type="submit" onclick="run();">New Game</button>
+			</div>
+			<p>To check the correctness, click on the original word</p>
+			<input id="word" type="text" readonly onclick="boolWord();">
+			<input id="wordAnswer" type="text">
+			<button name="button" onclick="randWord();"><p id="newGame">New Word</p></button>
+			<p id="wordNum">Word 0/10</p>
+			<p id="wordTF">True/False: 0/0</p>
+		</div>
+	</div>
+</body>
+</html>
